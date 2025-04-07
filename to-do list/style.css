@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(180deg,white , #4e085f);
+    padding: 10px;
+}
+.to-do{
+    position: relative;
+    width: 540px;
+    background:#fff;
+    /* margin: 100px auto 20px ; */
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    color: #002765;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#edeef0 ;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+#input-box{
+   padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background:#4e085f ;
+    color:#fff ;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+#check{
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    cursor: pointer;
+    accent-color: #4e085f;
+    margin-right: 16px;
+}
+.checked{
+    text-decoration: line-through;
+}
+ul li{
+    position: relative;
+    list-style: none;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    padding: 12px 8px 12px 50px ;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    background-color:  #edeef0;
+    color: #555;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+ul li span:hover{
+    
+    background-color:#d739ffa2;
+}
+.heading{
+    
+    color: purple;
+}
+.clock{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    font-size: 25px;
+  /* border: 2px solid red; */
+    top: 0px;
+    right: 20px;
+}
+@media (max-width: 600px) {
+  
+    .to-do {
+      transform: scale(0.8);
+    }
+  }
